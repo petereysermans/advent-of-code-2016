@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace AdventOfCode2016.Day1
 {
@@ -125,13 +124,5 @@ namespace AdventOfCode2016.Day1
                 _numberOfBlocksPerDirection[Direction.East] - 
                 _numberOfBlocksPerDirection[Direction.West]);
         }
-    }
-
-    public enum Direction
-    {
-        North,
-        East,
-        South,
-        West
     }
 }
