@@ -7,6 +7,10 @@ namespace AdventOfCode2016.Day1
     public class BlockCalculator
     {
         private Direction _direction = Direction.North;
+        private List<String> _visitedCoordinates = new List<string>();
+        private int _currentXCoordinate = 0;
+        private int _currentYCoordinate = 0;
+        private string _firstDoubleVisitedCoordinate;
 
         private Dictionary<Direction, int> _numberOfBlocksPerDirection;
 
@@ -20,6 +24,8 @@ namespace AdventOfCode2016.Day1
                 { Direction.West, 0 }
             };
         }
+
+        public string FirstDoubleVisitedCoordinate => _firstDoubleVisitedCoordinate;
 
         private void DetermineDirection(char currentMove)
         {
@@ -66,6 +72,39 @@ namespace AdventOfCode2016.Day1
             move = move.Trim();
             var numberOfBlocksToMove = int.Parse(move.Substring(1));
             DetermineDirection(move[0]);
+
+            if (string.IsNullOrEmpty(_firstDoubleVisitedCoordinate))
+            {
+                for (var i = 1; i <= numberOfBlocksToMove; i++)
+                {
+                    switch (_direction)
+                    {
+                        case Direction.North:
+                            _currentXCoordinate++;
+                            break;
+                        case Direction.East:
+                            _currentYCoordinate++;
+                            break;
+                        case Direction.South:
+                            _currentXCoordinate--;
+                            break;
+                        case Direction.West:
+                            _currentYCoordinate--;
+                            break;
+                    }
+
+                    var currentCoordinate = _currentXCoordinate + "_" + _currentYCoordinate;
+
+                    if (!_visitedCoordinates.Contains(currentCoordinate))
+                    {
+                        _visitedCoordinates.Add(currentCoordinate);
+                    }
+                    else
+                    {
+                        _firstDoubleVisitedCoordinate = currentCoordinate;
+                    }
+                }
+            }
 
             _numberOfBlocksPerDirection[_direction] += numberOfBlocksToMove;
         }
