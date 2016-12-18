@@ -39,13 +39,13 @@
                     }
                     break;
                 case 'D':
-                    if (_currentRow < 3)
+                    if (_currentRow < 2)
                     {
                         _currentRow++;
                     }
                     break;
                 case 'R':
-                    if (_currentColumn < 3)
+                    if (_currentColumn < 2)
                     {
                         _currentColumn++;
                     }
@@ -61,6 +61,19 @@
             }
 
             return _buttons[_currentRow, _currentColumn].ToString();
+        }
+
+        public string ProcessMoveset(string moveset)
+        {
+            var moves = moveset.Split('\n');
+            var result = string.Empty;
+
+            foreach (var move in moves)
+            {
+                result += Press(move);
+            }
+
+            return result;
         }
     }
 }
