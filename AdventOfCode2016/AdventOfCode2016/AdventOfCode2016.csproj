@@ -46,6 +46,8 @@
     <Compile Include="Day1\BlockCalculatorTestFixture.cs" />
     <Compile Include="Day1\BlockCalculator.cs" />
     <Compile Include="Day1\Direction.cs" />
+    <Compile Include="Day2\AdvancedKeyPad.cs" />
+    <Compile Include="Day2\AdvancedKeyPadTestFixture.cs" />
     <Compile Include="Day2\KeyPad.cs" />
     <Compile Include="Day2\KeyPadTestFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
