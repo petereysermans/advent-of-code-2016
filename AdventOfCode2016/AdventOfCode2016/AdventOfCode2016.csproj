@@ -50,8 +50,10 @@
     <Compile Include="Day2\AdvancedKeyPadTestFixture.cs" />
     <Compile Include="Day2\KeyPad.cs" />
     <Compile Include="Day2\KeyPadTestFixture.cs" />
+    <Compile Include="Day3\Part1TestFixture.cs" />
+    <Compile Include="Day3\Part2TestFixture.cs" />
     <Compile Include="Day3\TriangleSpecification.cs" />
-    <Compile Include="Day3\TriangleSpecificationTestFixture.cs" />
+    <Compile Include="Day3\TriangleStringExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
