@@ -54,10 +54,14 @@
     <Compile Include="Day3\Part2TestFixture.cs" />
     <Compile Include="Day3\TriangleSpecification.cs" />
     <Compile Include="Day3\TriangleStringExtension.cs" />
+    <Compile Include="Day4\Input.cs" />
     <Compile Include="Day4\LetterCount.cs" />
     <Compile Include="Day4\LetterCounter.cs" />
     <Compile Include="Day4\LetterCounterTestFixture.cs" />
+    <Compile Include="Day4\NameDecryptor.cs" />
+    <Compile Include="Day4\NameDecryptorTestFixture.cs" />
     <Compile Include="Day4\Part1TestFixture.cs" />
+    <Compile Include="Day4\Part2TestFixture.cs" />
     <Compile Include="Day4\Room.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
