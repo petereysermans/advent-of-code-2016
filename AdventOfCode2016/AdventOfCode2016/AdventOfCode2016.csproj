@@ -66,6 +66,7 @@
     <Compile Include="Day5\Classes\Md5HashCalculator.cs" />
     <Compile Include="Day5\Classes\PasswordDecryptor.cs" />
     <Compile Include="Day5\TestFixtures\Part1TestFixture.cs" />
+    <Compile Include="Day5\TestFixtures\Part2TestFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
