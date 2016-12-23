@@ -71,6 +71,8 @@
     <Compile Include="Day6\Classes\MessageDecoder.cs" />
     <Compile Include="Day6\TestFixtures\Part1TestFixture.cs" />
     <Compile Include="Day6\TestFixtures\Part2TestFixture.cs" />
+    <Compile Include="Day7\TestFixtures\Part1TestFixture.cs" />
+    <Compile Include="Day7\Classes\SupportsTlsSpecification.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
