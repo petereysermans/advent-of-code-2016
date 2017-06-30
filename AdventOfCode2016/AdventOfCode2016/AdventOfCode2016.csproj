@@ -72,8 +72,10 @@
     <Compile Include="Day6\TestFixtures\Part1TestFixture.cs" />
     <Compile Include="Day6\TestFixtures\Part2TestFixture.cs" />
     <Compile Include="Day7\Classes\Input.cs" />
+    <Compile Include="Day7\Classes\SupportsSslSpecification.cs" />
     <Compile Include="Day7\TestFixtures\Part1TestFixture.cs" />
     <Compile Include="Day7\Classes\SupportsTlsSpecification.cs" />
+    <Compile Include="Day7\TestFixtures\Part2TestFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
